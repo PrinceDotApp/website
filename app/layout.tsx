@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Navbar } from '../components/navbar';
 import { Footer } from '@/components/footer';
 import { Toaster } from 'sonner';
 import './globals.css';
@@ -22,7 +21,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="dark">
       <body className={`${inter.variable} bg-background font-sans antialiased`}>
         <div className="min-h-screen max-w-4xl mx-auto px-4">
-          <Navbar />
           <div className="py-4">{children}</div>
           <div className="sticky top-[100vh] pt-32 pb-4">
             <Footer />
